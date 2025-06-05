@@ -12,19 +12,9 @@ public abstract class StateMachine
         curState = state;
         curState?.Enter();
     }
-
-    public void HandleInput()
-    {
-        curState?.HandleInput();
-    }
-
+    
     public void Update()
     {
         curState?.Update();
-    }
-
-    public void PhysicsUpdate()
-    {
-        curState?.PhysicsUpdate();
     }
 }

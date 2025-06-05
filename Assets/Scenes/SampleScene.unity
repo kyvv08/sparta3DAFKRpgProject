@@ -854,6 +854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 692126668}
+  - component: {fileID: 692126669}
   m_Layer: 5
   m_Name: GameInfoUI
   m_TagString: Untagged
@@ -882,6 +883,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1000, y: 150}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &692126669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692126667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efcc31a679ed0a349b2dea96c750d139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldText: {fileID: 0}
+  curStageText: {fileID: 0}
 --- !u!1 &713524286
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,6 +2065,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1728628237}
+  - component: {fileID: 1728628241}
+  - component: {fileID: 1728628239}
+  - component: {fileID: 1728628238}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2073,6 +2091,58 @@ Transform:
   - {fileID: 1159703182}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1728628238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728628236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e11bdddb5a5266a4cb294c7ef65d8112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1728628239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728628236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcf0456814fd71242b118877ab472a36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <AnimationData>k__BackingField: {fileID: 0}
+  <PlayerData>k__BackingField: {fileID: 0}
+--- !u!143 &1728628241
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728628236}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1.7
+  m_Radius: 0.2
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.8, z: 0}
 --- !u!1 &1741002445
 GameObject:
   m_ObjectHideFlags: 0

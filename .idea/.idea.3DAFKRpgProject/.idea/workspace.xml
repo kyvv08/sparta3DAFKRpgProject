@@ -6,7 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a973c584-24ae-44ab-bd89-11c48f09c059" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DAFKRpgProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DAFKRpgProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/UI/PlayerUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/UI/PlayerUIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/IState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/IState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/IdleState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/IdleState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/StateMachine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/StateMachine.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/07. Inputs/PlayerInput/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/07. Inputs/PlayerInput/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/07. Inputs/PlayerInput/PlayerInput.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/07. Inputs/PlayerInput/PlayerInput.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/07. Inputs/PlayerInput/PlayerInput.inputactions.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/07. Inputs/PlayerInput/PlayerInput.inputactions.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +27,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/IState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerIdleState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/UI/GameInfoUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Util/Util.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/07. Inputs/PlayerInput/PlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -32,20 +41,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Unity 에디터에 연결.Unity 에디터에 연결">
     <configuration name="유닛 테스트(배치 모드)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe" />
@@ -105,7 +114,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749038365941</updated>
-      <workItem from="1749086239535" duration="9923000" />
+      <workItem from="1749086239535" duration="13749000" />
+      <workItem from="1749117846557" duration="10027000" />
     </task>
     <servers />
   </component>
