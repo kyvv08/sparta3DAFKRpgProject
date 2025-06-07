@@ -18,7 +18,7 @@ public class PlayerAttackState : IState
     public void Enter()
     {
         playerStateMachine.MoveSpeedModifier = playerStateMachine.Player.PlayerData.GroundData.RunSpeedModifier;
-        StartAnimation(playerStateMachine.Player.AnimationData.IdleParameterHash);
+        StartAnimation(playerStateMachine.Player.AnimationData.AttackParameterHash);
     }
 
     void StartAnimation(int hash)
@@ -39,7 +39,7 @@ public class PlayerAttackState : IState
 
     public void Exit()
     {
-        StopAnimation(playerStateMachine.Player.AnimationData.IdleParameterHash);   
+        StopAnimation(playerStateMachine.Player.AnimationData.AttackParameterHash);   
     }
     
 }

@@ -9,8 +9,7 @@ public class Player : MonoBehaviour
     [field: SerializeField] public PlayerSO PlayerData { get; private set; }
 
     public Animator Animator { get; private set; }
-    public PlayerController Input { get; private set; }
-    public CharacterController Controller { get; private set; }
+    public PlayerController PlayerController { get; private set; }
 
     private PlayerStateMachine stateMachine;
 
@@ -18,9 +17,8 @@ public class Player : MonoBehaviour
     {
         AnimationData.Initialize();
 
-        Animator = GetComponent<Animator>();
-        Input = GetComponent<PlayerController>();
-        Controller = GetComponent<CharacterController>();
+        Animator = GetComponentInChildren<Animator>();
+        PlayerController = GetComponent<PlayerController>();
 
         stateMachine = new PlayerStateMachine(this);
         stateMachine.ChangeState(stateMachine.IdleState);

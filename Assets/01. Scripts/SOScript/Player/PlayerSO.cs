@@ -20,4 +20,6 @@ public class PlayerGroundData
 public class PlayerSO : ScriptableObject
 {
     [field: SerializeField] public PlayerGroundData GroundData { get; private set; }
+    [field: SerializeField] public float RotateSpeed { get; private set; }
+    
 }

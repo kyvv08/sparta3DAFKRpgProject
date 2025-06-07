@@ -14,6 +14,7 @@ public class PlayerIdleState : IState
     
     public void Enter()
     {
+        Debug.Log("Enter IdleState");
         playerStateMachine.MoveSpeedModifier = 0f;
         StartAnimation(playerStateMachine.Player.AnimationData.IdleParameterHash);
     }
@@ -30,11 +31,25 @@ public class PlayerIdleState : IState
 
     public void Update()
     {
-        
+        if (IsEnemyAlive())
+        {
+            Debug.Log("플레이어 상태 변화 : Chasing");
+            playerStateMachine.ChangeState(playerStateMachine.ChasingState);
+        }
     }
 
     public void Exit()
     {
         StopAnimation(playerStateMachine.Player.AnimationData.IdleParameterHash);   
+    }
+
+    private bool IsEnemyAlive()
+    {
+        GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
+        if (enemy != null)
+        {
+            return true;
+        }
+        return false;
     }
 }

@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAnimationData : MonoBehaviour
+[Serializable]
+public class PlayerAnimationData
 {
     [Header("Ground")]
     [SerializeField] private string groundParameterName = "@Ground";
