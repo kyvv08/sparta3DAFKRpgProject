@@ -17,4 +17,9 @@ MonoBehaviour:
     <BaseRotationDamping>k__BackingField: 1
     <WalkSpeedModifier>k__BackingField: 0.225
     <RunSpeedModifier>k__BackingField: 1.718
-  <RotateSpeed>k__BackingField: 10
+  <AttackData>k__BackingField:
+    <BaseAttackSpeed>k__BackingField: 1
+    <AttackDelayModifier>k__BackingField: 2
+    <BaseAttackAnimationClip>k__BackingField: {fileID: -203655887218126122, guid: 8d6f50fa060a8c743bb79775df90ddb8,
+      type: 3}
+  <RotateSpeed>k__BackingField: 1

@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     [field: Header("Animations")]
     [field: SerializeField] public PlayerAnimationData AnimationData { get; private set; }
     [field: SerializeField] public PlayerSO PlayerData { get; private set; }
+    [field: SerializeField] public StatSO PlayerStat { get; private set; }
 
     public Animator Animator { get; private set; }
     public PlayerController PlayerController { get; private set; }
@@ -16,7 +17,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         AnimationData.Initialize();
-
+        
         Animator = GetComponentInChildren<Animator>();
         PlayerController = GetComponent<PlayerController>();
 

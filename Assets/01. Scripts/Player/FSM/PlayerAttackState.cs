@@ -34,7 +34,8 @@ public class PlayerAttackState : IState
     public void Update()
     {
         //공격 중이라면 콤보 상태로
-        
+        //playerStateMachine.Player.PlayerController.AttackEnemy();
+
     }
 
     public void Exit()

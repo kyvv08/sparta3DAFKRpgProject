@@ -6,18 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="a973c584-24ae-44ab-bd89-11c48f09c059" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DAFKRpgProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DAFKRpgProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Animation/PlayerAnimationData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Animation/PlayerAnimationData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Animation/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Animation/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Manager/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Manager/UIManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerAttackState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerChasingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerChasingState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerIdleState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerStateMachine.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/Player.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/Player.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/PlayerSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/PlayerSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Stat/StatHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Stat/StatHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Externals/prototype-textures/PNG/Dark/Materials/texture_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Externals/prototype-textures/PNG/Dark/Materials/texture_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Player/Animations/Attacks/Paladin WProp J Nordstrom@Standing Melee Attack Backhand.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Player/Animations/Attacks/Paladin WProp J Nordstrom@Standing Melee Attack Backhand.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Player/Animations/Attacks/Paladin WProp J Nordstrom@Standing Melee Attack Downward.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Player/Animations/Attacks/Paladin WProp J Nordstrom@Standing Melee Attack Downward.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Player/Materials/Paladin_diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Player/Materials/Paladin_diffuse.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +33,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bff907ed581f483ab4bd129472866e971fe00/16/4672d657/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Animation/AnimationProxy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Stat/Stat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/UI/GameInfoUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Util/Util.cs" root0="FORCE_HIGHLIGHTING" />
   </component>

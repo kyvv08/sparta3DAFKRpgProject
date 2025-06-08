@@ -25,5 +25,7 @@ public class PlayerStateMachine : StateMachine
         
         MainCameraTransform = Camera.main.transform;
         MoveSpeed = player.PlayerData.GroundData.BaseSpeed;
+
+        player.PlayerController.SetStateMachine(this);
     }
 }

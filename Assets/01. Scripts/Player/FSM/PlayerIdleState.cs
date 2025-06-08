@@ -33,7 +33,6 @@ public class PlayerIdleState : IState
     {
         if (IsEnemyAlive())
         {
-            Debug.Log("플레이어 상태 변화 : Chasing");
             playerStateMachine.ChangeState(playerStateMachine.ChasingState);
         }
     }
