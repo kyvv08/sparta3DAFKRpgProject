@@ -31,18 +31,7 @@ public class PlayerUIController : MonoBehaviour
             expBar = Util.FindChild<Transform>(this.transform,"EXP").Find("Bar").GetComponent<Image>();
         }
         #endif
-    }
-
-    private void Start()
-    {
-        TestCode();
-    }
-
-    void TestCode()
-    {
-        SetHp(.5f);
-        SetMp(.3f);
-        SetExp(.8f);
+        
     }
     
     public void SetHp(float percentage)

@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class AnimationProxy : MonoBehaviour
 {
-    private PlayerController controller;
+    private PlayerController playerController;
+    private EnemyController enemyController;
     void Start()
     {
-        controller = GetComponentInParent<PlayerController>();
+        playerController = GetComponentInParent<PlayerController>();
+        enemyController = GetComponentInParent<EnemyController>();
     }
 
     public void AttackEnemy()
     {
-        if (controller != null)
+        if (playerController != null)
         {
-            controller.AttackEnemy();
+            playerController.AttackEnemy();
+        }
+        else if (enemyController != null)
+        {
+            enemyController.AttackEnemy();
         }
         else
         {

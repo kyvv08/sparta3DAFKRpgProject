@@ -22,12 +22,12 @@ public class PlayerController : MonoBehaviour
 
     private bool isAttacking = false;
     private Coroutine attackDelayCoroutine = null;
+
+    public Action PlayerStatusChanged;
     private void Awake()
     {
         InputHandler = GetComponent<PlayerInputHandler>();
         Controller = GetComponent<CharacterController>();
-        
-        Debug.Log(Controller);
         path = new NavMeshPath();
     }
 
@@ -69,9 +69,9 @@ public class PlayerController : MonoBehaviour
         Controller.Move(dir * (playerStateMachine.MoveSpeedModifier * Time.deltaTime));
         //캐릭터 회전 --> 이동방향으로 돌아가도록
         transform.rotation = Quaternion.Slerp(
-            playerStateMachine.Player.transform.rotation,
+            transform.rotation,
             Quaternion.LookRotation(dir),
-            playerStateMachine.Player.PlayerData.RotateSpeed * Time.deltaTime
+            playerStateMachine.Player.PlayerData.GroundData.BaseRotationDamping * Time.deltaTime
         );
         
         
@@ -153,7 +153,8 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            Debug.Log("Attack");
+            target.GetComponent<Enemy>().TakeDamage(playerStateMachine.Player.PlayerStat.BaseStat.totalAttack);
+            Debug.Log("Attack : "+playerStateMachine.Player.PlayerStat.BaseStat.totalAttack);
         }
     }
 }

@@ -17,7 +17,6 @@ public class PlayerAttackState : IState
     
     public void Enter()
     {
-        playerStateMachine.MoveSpeedModifier = playerStateMachine.Player.PlayerData.GroundData.RunSpeedModifier;
         StartAnimation(playerStateMachine.Player.AnimationData.AttackParameterHash);
     }
 

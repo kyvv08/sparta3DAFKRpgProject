@@ -6,7 +6,7 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     private static UIManager instance;
-    public UIManager Instance { get { return instance; }
+    public static UIManager Instance { get { return instance; }
         private set { instance = value; }
     }
     

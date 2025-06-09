@@ -6,59 +6,41 @@ using UnityEngine;
 [Serializable]
 public class Stat
 {
-    public uint MaxValue { get; private set; }
-    public uint CurrentValue { get; private set; }
+    public uint Level;
+    
+    public uint MaxHP;
+    public uint CurHP;
+    
+    public uint MaxMP;
+    public uint CurMP;
 
-    public event Action OnValueChanged;
+    [Header("경험치")]
+    public uint ExpToNextLevel;
+    public uint CurExp;
+    
+    [Header("공격력")]
+    public uint BaseAttack;
+    public uint additionalAttack;
+    
+    [Header("이동 속도")]
+    public float BaseMoveSpeed;
+    public float MoveSpeedModifier;
+    [Header("공격 속도")]
+    public float BaseAttackSpeed;
+    public float AttackSpeedModifier;
 
-    public Stat(uint maxValue)
-    {
-        MaxValue = maxValue;
-        CurrentValue = maxValue;
-    }
-
-    public void SetMax(uint value)
-    {
-        MaxValue = value;
-        CurrentValue = (uint)Mathf.Min(CurrentValue, MaxValue);
-        OnValueChanged?.Invoke();
-    }
-
-    public void SetCurrent(uint value)
-    {
-        CurrentValue = (uint)Mathf.Clamp(value, 0, MaxValue);
-        OnValueChanged?.Invoke();
-    }
-
-    public void Increase(uint amount)
-    {
-        SetCurrent(CurrentValue + amount);
-    }
-
-    public void Decrease(uint amount)
-    {
-        SetCurrent(CurrentValue - amount);
-    }
-
-    public float GetPercentage()
-    {
-        return MaxValue == 0 ? 0f : (float)CurrentValue / MaxValue;
-    }
-
-    public bool IsZero()
-    {
-        return CurrentValue <= 0;
-    }
+    public uint totalAttack => BaseAttack + additionalAttack;
 }
 
 [CreateAssetMenu(fileName = "Stat", menuName = "Stat/Stat")]
 public class StatSO : ScriptableObject
 {
-    public Stat Level;
-    public Stat Hp;
-    public Stat Mp;
-    public Stat Exp;
-    public Stat AttackPower;
-    public Stat AttackSpeed;
-    public Stat MoveSpeed;
+    public Stat BaseStat;
+
+    public void Init()
+    {
+        BaseStat.CurHP = BaseStat.MaxHP;
+        BaseStat.CurMP = BaseStat.MaxMP;
+        BaseStat.CurExp = 0;
+    }
 }
