@@ -24,7 +24,6 @@ public class PlayerAttackState : IState
 
     void StopAnimation(int hash)
     {
-        Debug.Log("StopAnimation 타이밍");
         playerStateMachine.Player.Animator.SetBool(hash,false);
         playerStateMachine.Player.Animator.StopPlayback();
     }

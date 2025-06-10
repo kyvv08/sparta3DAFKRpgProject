@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
         }
         if (playerRealStat.CurHP <= 0)
         {
-            Debug.Log("Player Dead, return to Prev Stage");
+            StageManager.Instance.PlayerDead();
         }
         UpdatePlayerUI?.Invoke();
     }

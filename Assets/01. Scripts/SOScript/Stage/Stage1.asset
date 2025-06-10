@@ -15,5 +15,5 @@ MonoBehaviour:
   stageNum: 1
   enemies:
   - {fileID: 11400000, guid: 029fb274d501d1e448fd71043d9c3fed, type: 2}
-  enemyNum: 03000000
-  playerRespawnPosition: {x: 0, y: 0, z: 0}
+  enemyNum: 01000000
+  playerRespawnPosition: {x: 3, y: 0, z: 4}

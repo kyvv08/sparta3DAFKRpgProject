@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73246b089aa795743828626591c8c04f, type: 3}
+  m_Name: Enemy
+  m_EditorClassIdentifier: 
+  <GroundData>k__BackingField:
+    <BaseSpeed>k__BackingField: 5
+    <BaseRotationDamping>k__BackingField: 2
+    <WalkSpeedModifier>k__BackingField: 0.225
+    <RunSpeedModifier>k__BackingField: 1
+  <AttackData>k__BackingField:
+    <BaseAttackAnimationClip>k__BackingField: {fileID: -203655887218126122, guid: 8d6f50fa060a8c743bb79775df90ddb8,
+      type: 3}
+  <DropItem>k__BackingField:
+  - {fileID: 11400000, guid: b3cef5594a5bef740b48be7a4559b95c, type: 2}
+  - {fileID: 11400000, guid: 0a928ff793afb584ab9fdd14e640a016, type: 2}
+  <DropGold>k__BackingField: 50
+  <DropExp>k__BackingField: 15
+  <EnemyPrefab>k__BackingField: {fileID: 5128559340537350544, guid: 429927ef8bc913a4693891da4a456beb,
+    type: 3}

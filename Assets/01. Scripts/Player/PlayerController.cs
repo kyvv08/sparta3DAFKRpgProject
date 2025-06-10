@@ -60,19 +60,22 @@ public class PlayerController : MonoBehaviour
             playerStateMachine.ChangeState(playerStateMachine.AttackState);
             return;
         }
-
-        if (path == null || path.corners.Length == 0) return;
-
+        
+        
         Vector3 nextCorner = path.corners[curCornerIndex];
         Vector3 dir = (nextCorner - transform.position).normalized;
         
         Controller.Move(dir * (playerStateMachine.MoveSpeedModifier * Time.deltaTime));
-        //캐릭터 회전 --> 이동방향으로 돌아가도록
-        transform.rotation = Quaternion.Slerp(
-            transform.rotation,
-            Quaternion.LookRotation(dir),
-            playerStateMachine.Player.PlayerData.GroundData.BaseRotationDamping * Time.deltaTime
-        );
+
+        dir.y = 0f;
+        if (dir.sqrMagnitude > 0.001f)
+        {
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
+                Quaternion.LookRotation(dir),
+                playerStateMachine.Player.PlayerData.GroundData.BaseRotationDamping * Time.deltaTime
+            );
+        }
         
         
         if (Vector3.Distance(transform.position, nextCorner) < 0.3f && curCornerIndex < path.corners.Length - 1)

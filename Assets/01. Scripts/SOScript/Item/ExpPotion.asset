@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: Stage2
-  m_EditorClassIdentifier: Assembly-CSharp::StageData
-  stageNum: 2
-  enemies:
-  - {fileID: 11400000, guid: 029fb274d501d1e448fd71043d9c3fed, type: 2}
-  enemyNum: 05000000
-  playerRespawnPosition: {x: 0, y: 0, z: 0}
+  m_Name: ExpPotion
+  m_EditorClassIdentifier: Assembly-CSharp::ItemData
+  itemName: ExpPotion
+  type: 0
+  icon: {fileID: 21300000, guid: a66d305f9e7f110449bae89378b3d324, type: 3}
+  statType: 2
+  equipType: 0
+  statValue: 20
+  price: 50

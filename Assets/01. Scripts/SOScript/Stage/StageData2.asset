@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: Stage3
+  m_Name: StageData2
   m_EditorClassIdentifier: Assembly-CSharp::StageData
-  stageNum: 0
+  stageNum: 2
   enemies:
   - {fileID: 11400000, guid: 029fb274d501d1e448fd71043d9c3fed, type: 2}
-  enemyNum: 08000000
-  playerRespawnPosition: {x: 0, y: 0, z: 0}
+  - {fileID: 11400000, guid: cf5d50909b2b9004f82d75cde8bdbe0a, type: 2}
+  enemyNum: 0200000003000000
+  playerRespawnPosition: {x: 15, y: 0, z: 24}

@@ -5,15 +5,6 @@ using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
-[CreateAssetMenu(fileName = "Stage",menuName = "StageData")]
-public class StageData : ScriptableObject
-{
-    public int stageNum;
-    public List<EnemySO> enemies;
-    public List<int> enemyNum;
-    public Vector3 playerRespawnPosition;
-}
-
 public class StageManager : MonoBehaviour
 {
     private static StageManager instance;
@@ -21,13 +12,16 @@ public class StageManager : MonoBehaviour
     public static StageManager Instance { get => instance; }
     private int curStageNum = 1;
     [SerializeField] private StageData[] stageData;
+    [SerializeField] private BoxCollider[] spawnArea;
     
-    private List<GameObject> enemies;
+    private List<GameObject> enemies = new List<GameObject>();
 
     private Vector3 centerPosition;
     private float range = 20f;
     private float navMaxDistance = 5f;
 
+    
+    
     public bool IsInitDone = false;
     
     private void Awake()
@@ -42,16 +36,15 @@ public class StageManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         InitStage(curStageNum-1);
-        enemies = new List<GameObject>();
     }
 
     public void InitStage(int index)
     {
         IsInitDone = false;
         //Debug.Log(stageData.Length);
-        if (index >= stageData.Length)
+        while (index >= stageData.Length)
         {
-            return;
+            --index;
         }
         PlayerManager.Instance.player.transform.position = stageData[index].playerRespawnPosition;
         curStageNum = stageData[index].stageNum;
@@ -67,23 +60,23 @@ public class StageManager : MonoBehaviour
         {
             for (int j = 0; j < stageData[index].enemyNum[i]; ++j)
             {
-                Debug.Log(i);
-                GetRandomPointOnNavMesh(out randomPos);
-                Debug.Log("RandomPos: "+ randomPos);
+                GetRandomPoint(out randomPos);
                 GameObject temp = Instantiate(stageData[index].enemies[i].EnemyPrefab, randomPos,Quaternion.identity);
-                Debug.Log("GameObject"+temp);
                 enemies.Add(temp);
             }
         }
-        Debug.Log(enemies.Count);
+        enemies.Add(Instantiate(stageData[index].enemies[0].EnemyPrefab,spawnArea[4].transform.position,Quaternion.identity));
     }
-    private void GetRandomPointOnNavMesh(out Vector3 pos)
+    private void GetRandomPoint(out Vector3 pos)
     {
-        pos = (Random.insideUnitSphere * range) + centerPosition;
+        BoxCollider temp = spawnArea[Random.Range(0, spawnArea.Length)];
+        Vector3 center = temp.bounds.center;
+        Vector3 size = temp.bounds.size;
 
-        NavMeshHit hit;
-        
-        NavMesh.SamplePosition(pos, out hit,range, NavMesh.AllAreas);
+        float x = Random.Range(center.x - size.x / 2, center.x + size.x / 2);
+        float y = center.y;
+        float z = Random.Range(center.z - size.z / 2, center.z + size.z / 2);
+        pos = new Vector3(x, y, z);
     }
 
     public void DestroyEnemy(GameObject obj)
@@ -92,14 +85,25 @@ public class StageManager : MonoBehaviour
         {
             if (obj == enemy)
             {
-                Destroy(obj);
-                return;
+                enemies.Remove(enemy);
+                Destroy(enemy);
+                break;
             }
+        }
+
+        if (enemies.Count == 0)
+        {
+            InitStage(curStageNum);
         }
     }
 
     public List<GameObject> GetEnemyList()
     {
         return enemies;
+    }
+
+    public void PlayerDead()
+    {
+        InitStage(curStageNum-1);
     }
 }

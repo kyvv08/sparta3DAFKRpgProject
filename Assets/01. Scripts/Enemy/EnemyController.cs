@@ -57,14 +57,15 @@ public class EnemyController : MonoBehaviour
             return;
         }
         target.TakeDamage(enemyStateMachine.Enemy.EnemyStat.BaseStat.BaseAttack);
-        Debug.Log("Enemy Attack");
     }
 
     public void Rotate()
     {
+        Vector3 dir = target.transform.position - transform.position;
+        dir.y = 0;
         transform.rotation = Quaternion.Slerp(
             transform.rotation,
-            Quaternion.LookRotation(target.transform.position - transform.position),
+            Quaternion.LookRotation(dir),
             enemyStateMachine.Enemy.EnemyData.GroundData.BaseRotationDamping * Time.deltaTime
         );
     }
