@@ -22,6 +22,7 @@ public class EnemyAttackState : IState
     void StartAnimation(int hash)
     {
         enemyStateMachine.Enemy.Animator.SetBool(hash,true);
+        enemyStateMachine.Enemy.Animator.speed = enemyStateMachine.Enemy.EnemyStat.BaseStat.BaseAttackSpeed;
     }
 
     void StopAnimation(int hash)

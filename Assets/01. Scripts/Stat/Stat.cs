@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [Serializable]
@@ -8,10 +9,13 @@ public class Stat
 {
     public uint Level;
     
-    public uint MaxHP;
+    public uint maxHP;
+    public uint AdditionalHP;
+    
     public uint CurHP;
     
-    public uint MaxMP;
+    public uint maxMP;
+    public uint AdditionalMP;
     public uint CurMP;
 
     [Header("경험치")]
@@ -30,6 +34,8 @@ public class Stat
     public float AttackSpeedModifier;
 
     public uint totalAttack => BaseAttack + additionalAttack;
+    public uint MaxHP => maxHP + AdditionalHP;
+    public uint MaxMP => maxMP + AdditionalMP;
 }
 
 [CreateAssetMenu(fileName = "Stat", menuName = "Stat/Stat")]

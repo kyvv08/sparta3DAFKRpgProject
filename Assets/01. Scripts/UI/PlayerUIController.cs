@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,7 @@ public class PlayerUIController : MonoBehaviour
     [SerializeField] private Image hpBar;
     [SerializeField] private Image mpBar;
     [SerializeField] private Image expBar;
+    [SerializeField] private TextMeshProUGUI levelText;
 
     private void Awake()
     {
@@ -47,5 +49,10 @@ public class PlayerUIController : MonoBehaviour
     public void SetExp(float percentage)
     {
         expBar.fillAmount = percentage;
+    }
+
+    public void SetLevel(uint level)
+    {
+        levelText.text = level.ToString();
     }
 }

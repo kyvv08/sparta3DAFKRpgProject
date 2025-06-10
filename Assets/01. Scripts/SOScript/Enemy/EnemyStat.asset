@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StatSO
   BaseStat:
     Level: 1
-    MaxHP: 10
+    maxHP: 10
+    AdditionalHP: 0
     CurHP: 10
-    MaxMP: 0
+    maxMP: 0
+    AdditionalMP: 0
     CurMP: 0
     ExpToNextLevel: 0
     CurExp: 0
@@ -24,5 +26,5 @@ MonoBehaviour:
     additionalAttack: 0
     BaseMoveSpeed: 1
     MoveSpeedModifier: 0
-    BaseAttackSpeed: 1
+    BaseAttackSpeed: 2
     AttackSpeedModifier: 0

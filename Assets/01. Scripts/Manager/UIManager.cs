@@ -12,6 +12,7 @@ public class UIManager : MonoBehaviour
     
     public GameInfoUIController gameInfoUI;
     public PlayerUIController playerUI;
+    public InventoryUIController inventoryUI;
     private void Awake()
     {
         if (instance == null)

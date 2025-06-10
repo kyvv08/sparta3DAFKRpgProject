@@ -27,18 +27,7 @@ public class GameInfoUIController : MonoBehaviour
         #endif
     }
 
-    void TestCode()
-    {
-        SetCurMoney(10000);
-        SetCurStage(3);
-    }
-    
-    private void Start()
-    {
-        TestCode();
-    }
-
-    public void SetCurMoney(int value)
+    public void SetCurMoney(uint value)
     {
         goldText.SetText($"{value:N0}");
     }

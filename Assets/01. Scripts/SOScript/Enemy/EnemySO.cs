@@ -21,9 +21,6 @@ public class EnemyGroundData
 [Serializable]
 public class EnemyAttackData
 {
-    [field: SerializeField]
-    [field: Range(0f, 1f)]
-    public float BaseAttackSpeed { get; private set; } = 1f;
     
     [field: Header("AttackData")]
     [field: SerializeField] public AnimationClip BaseAttackAnimationClip { get; private set; }
