@@ -5,14 +5,11 @@ using UnityEngine;
 public class PlayerAttackState : IState
 {
     private PlayerStateMachine playerStateMachine;
-    private Transform playerTransform;
-    private Transform target = null;
     
     
     public PlayerAttackState(PlayerStateMachine stateMachine)
     {
         playerStateMachine = stateMachine;
-        playerTransform = playerStateMachine.Player.transform;
     }
     
     public void Enter()

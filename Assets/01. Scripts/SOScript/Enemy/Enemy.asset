@@ -25,3 +25,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0a928ff793afb584ab9fdd14e640a016, type: 2}
   <DropGold>k__BackingField: 10
   <DropExp>k__BackingField: 15
+  <EnemyPrefab>k__BackingField: {fileID: 5128559340537350544, guid: 429927ef8bc913a4693891da4a456beb,
+    type: 3}

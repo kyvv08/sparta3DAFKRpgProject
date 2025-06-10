@@ -40,7 +40,8 @@ public class Enemy : MonoBehaviour
     
     private void Update()
     {
-        stateMachine.Update();
+        if(StageManager.Instance.IsInitDone)
+        {stateMachine.Update();}
     }
 
     public bool TakeDamage(uint damage)
@@ -61,7 +62,7 @@ public class Enemy : MonoBehaviour
             }
             UIManager.Instance.inventoryUI.AddGold(EnemyData.DropGold);
             PlayerManager.Instance.player.UseExpItem(EnemyData.DropExp);
-            Destroy(gameObject);
+            StageManager.Instance.DestroyEnemy(gameObject);
             return true;
         }
 

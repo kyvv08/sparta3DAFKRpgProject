@@ -16,15 +16,15 @@ MonoBehaviour:
     Level: 1
     maxHP: 10
     AdditionalHP: 0
-    CurHP: 10
+    CurHP: 0
     maxMP: 0
     AdditionalMP: 0
     CurMP: 0
     ExpToNextLevel: 0
     CurExp: 0
-    BaseAttack: 2
+    BaseAttack: 5
     additionalAttack: 0
-    BaseMoveSpeed: 1
+    BaseMoveSpeed: 0
     MoveSpeedModifier: 0
     BaseAttackSpeed: 2
     AttackSpeedModifier: 0

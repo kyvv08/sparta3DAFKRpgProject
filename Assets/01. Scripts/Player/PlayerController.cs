@@ -109,8 +109,8 @@ public class PlayerController : MonoBehaviour
 
     private Transform FindClosestEnemy()
     {
-        //나중에 enemyManager 같은 관리 주체를 통해서 enemy 리스트 받아올 것
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        
+        List<GameObject> enemies = StageManager.Instance.GetEnemyList();
         Transform closest = null;
         float distance = Mathf.Infinity;
         foreach (GameObject enemy in enemies)

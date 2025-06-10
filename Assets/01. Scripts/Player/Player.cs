@@ -49,7 +49,8 @@ public class Player : MonoBehaviour
     
     private void Update()
     {
-        stateMachine.Update();
+        if(StageManager.Instance.IsInitDone)
+        {stateMachine.Update();}
     }
 
     private void InitStat()

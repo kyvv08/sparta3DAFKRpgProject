@@ -6,22 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="a973c584-24ae-44ab-bd89-11c48f09c059" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DAFKRpgProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DAFKRpgProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Animation/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Animation/Player.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Enemy/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Enemy/FSM/EnemyAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Enemy/FSM/EnemyAttackState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Manager/StageManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Manager/StageManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerAttackState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerIdleState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/Enemy.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/Enemy.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/EnemySO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/EnemySO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/Player.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/Player.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/PlayerStat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/PlayerStat.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/UI/GameInfoUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/UI/GameInfoUIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/UI/InventoryUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/UI/InventoryUIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/UI/ItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/UI/ItemSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/08. Prefabs/ItemSlot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/08. Prefabs/ItemSlot.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +133,7 @@
       <workItem from="1749280642675" duration="15508000" />
       <workItem from="1749429782520" duration="25074000" />
       <workItem from="1749525049453" duration="8547000" />
-      <workItem from="1749537511861" duration="12979000" />
+      <workItem from="1749537511861" duration="18069000" />
     </task>
     <servers />
   </component>
