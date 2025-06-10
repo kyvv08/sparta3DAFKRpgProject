@@ -16,11 +16,11 @@ MonoBehaviour:
     Level: 1
     maxHP: 100
     AdditionalHP: 0
-    CurHP: 0
+    CurHP: 100
     maxMP: 100
     AdditionalMP: 0
-    CurMP: 0
-    ExpToNextLevel: 50
+    CurMP: 100
+    ExpToNextLevel: 5
     CurExp: 0
     BaseAttack: 5
     additionalAttack: 0

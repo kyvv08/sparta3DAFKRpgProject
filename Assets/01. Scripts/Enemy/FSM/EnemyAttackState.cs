@@ -11,7 +11,7 @@ public class EnemyAttackState : IState
     public EnemyAttackState(EnemyStateMachine stateMachine)
     {
         enemyStateMachine = stateMachine;
-        target = enemyStateMachine.Enemy.EnemyController.target.transform;
+        target = PlayerManager.Instance.player.transform;
     }
     
     public void Enter()

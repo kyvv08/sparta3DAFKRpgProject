@@ -23,6 +23,7 @@ public class InventoryUIController : MonoBehaviour
     public GameObject sellButton;
 
     private int curEquipIndex;
+    private List<ItemData> equippedItems = new List<ItemData>();
 
     private uint gold;
     
@@ -78,10 +79,9 @@ public class InventoryUIController : MonoBehaviour
     }
 
 		
-    public void AddItem(ItemData data, uint addGold = 0)
+    public void AddItem(ItemData data)
     {
         ItemSlot slot = GetItemStack(data);
-        gold += addGold;
         if (slot != null)
         {
             slot.quantity++;
@@ -97,7 +97,12 @@ public class InventoryUIController : MonoBehaviour
             emptySlot.quantity = 1;
             UpdateSlotUI();
         }
-        
+    }
+
+    public void AddGold(uint addGold)
+    {
+        gold += addGold;
+        UpdateGameUI();
     }
     
     public void UpdateSlotUI()
@@ -146,7 +151,7 @@ public class InventoryUIController : MonoBehaviour
         selectedItem = slots[index];
         selectedItemIndex = index;
 
-        selectedItemName.text = selectedItem.item.displayName;
+        selectedItemName.text = selectedItem.item.itemName;
 
         selectedItemStatName.text = string.Empty;
         selectedItemStatValue.text = string.Empty;
@@ -202,7 +207,7 @@ public class InventoryUIController : MonoBehaviour
         {
             if (slots[selectedItemIndex].equipped)
             {
-                //UnEquip(selectedItemIndex);
+                UnEquip(slots[selectedItemIndex].item);
             }
 
             selectedItem.item = null;
@@ -242,5 +247,45 @@ public class InventoryUIController : MonoBehaviour
         UIManager.Instance.playerUI.SetExp(exp);
         
         UIManager.Instance.playerUI.SetLevel(PlayerManager.Instance.player.playerRealStat.Level);
+    }
+
+    public void OnEquipButton()
+    {
+        Equip(selectedItem.item);
+    }
+    
+    private void Equip(ItemData item)
+    {
+        bool isEquipTypeExist = false;
+        foreach (ItemData equipItem in equippedItems)
+        {
+            if (item.equipType == equipItem.equipType)
+            {
+                PlayerManager.Instance.player.UnEquipItem(item);
+                equippedItems.Remove(equipItem);
+                equippedItems.Add(item);
+                PlayerManager.Instance.player.EquipItem(item);
+                isEquipTypeExist = true;
+                break;
+            }
+        }
+        if(!isEquipTypeExist){
+            equippedItems.Add(item);
+            PlayerManager.Instance.player.EquipItem(item);
+        }
+        UpdatePlayerUI();
+    }
+
+    private void UnEquip(ItemData item)
+    {
+        foreach (ItemData equipItem in equippedItems)
+        {
+            if (item == equipItem)
+            {
+                PlayerManager.Instance.player.UnEquipItem(equipItem);
+                equippedItems.Remove(equipItem);
+                return;
+            }
+        }
     }
 }

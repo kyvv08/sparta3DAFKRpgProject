@@ -31,7 +31,12 @@ public class EnemySO : ScriptableObject
 {
     [field: SerializeField] public EnemyGroundData GroundData { get; private set; }
     [field: SerializeField] public EnemyAttackData AttackData { get; private set; }
+    [field: SerializeField] public ItemData[] DropItem { get; private set; }
+    [field: SerializeField] public uint DropGold { get; private set; }
+    [field: SerializeField] public uint DropExp { get; private set; }
+    
 
+    
     //[field: SerializeField] public StatSO PlayerStat { get; private set; }
     
 }

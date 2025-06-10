@@ -14,9 +14,9 @@ public class PlayerIdleState : IState
     
     public void Enter()
     {
-        Debug.Log("Enter IdleState");
         playerStateMachine.MoveSpeedModifier = 0f;
         StartAnimation(playerStateMachine.Player.AnimationData.IdleParameterHash);
+        //playerStateMachine.Player.Animator.Play(playerStateMachine.Player.AnimationData.IdleParameterHash);
     }
 
     void StartAnimation(int hash)

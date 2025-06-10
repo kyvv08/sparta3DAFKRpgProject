@@ -9,7 +9,10 @@ public class PlayerRealStat
     public uint CurHP;
     public uint CurMP;
     public uint CurExp;
+    public uint BaseAttack;
     public uint AdditionalAttack;
+
+    public uint TotalAttack => BaseAttack + AdditionalAttack;
 }
 
 public class Player : MonoBehaviour
@@ -56,6 +59,7 @@ public class Player : MonoBehaviour
         playerRealStat.CurMP = PlayerStat.BaseStat.MaxMP;
         playerRealStat.CurExp = 0;  //저장 기능 추가 시 변경 필요
         playerRealStat.Level = PlayerStat.BaseStat.Level;
+        playerRealStat.BaseAttack = PlayerStat.BaseStat.BaseAttack;
         playerRealStat.AdditionalAttack = PlayerStat.BaseStat.additionalAttack;
     }
     
@@ -107,6 +111,26 @@ public class Player : MonoBehaviour
         {
             playerRealStat.CurHP = PlayerStat.BaseStat.MaxHP;
             playerRealStat.CurMP = PlayerStat.BaseStat.MaxMP;
+        }
+    }
+
+    public void EquipItem(ItemData item)
+    {
+        switch (item.equipType)
+        {
+            case EquipType.Weapon:
+                playerRealStat.AdditionalAttack += item.statValue;
+                Debug.Log(playerRealStat.TotalAttack);
+                break;
+        }
+    }
+    public void UnEquipItem(ItemData item)
+    {
+        switch (item.equipType)
+        {
+            case EquipType.Weapon:
+                playerRealStat.AdditionalAttack -= item.statValue;
+                break;
         }
     }
 }

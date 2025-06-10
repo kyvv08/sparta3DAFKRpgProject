@@ -15,14 +15,21 @@ public enum StatType
     HP,MP,EXP
 }
 
-public abstract class ItemData : ScriptableObject
+public enum EquipType
+{
+    Weapon,Armor
+}
+
+[CreateAssetMenu(fileName = "Item",menuName = "ItemData")]
+public class ItemData : ScriptableObject
 {
     [Header("아이템에 들어갈 정보 Info")]
     public string itemName;
-    public string displayName;
+    //public string displayName;
     public ItemType type;
     public Sprite icon;
     public StatType statType;
+    public EquipType equipType;
     public uint statValue;
     public uint price;
 }

@@ -18,6 +18,10 @@ MonoBehaviour:
     <WalkSpeedModifier>k__BackingField: 0.225
     <RunSpeedModifier>k__BackingField: 1
   <AttackData>k__BackingField:
-    <BaseAttackSpeed>k__BackingField: 1
     <BaseAttackAnimationClip>k__BackingField: {fileID: -203655887218126122, guid: 8d6f50fa060a8c743bb79775df90ddb8,
       type: 3}
+  <DropItem>k__BackingField:
+  - {fileID: 11400000, guid: b3cef5594a5bef740b48be7a4559b95c, type: 2}
+  - {fileID: 11400000, guid: 0a928ff793afb584ab9fdd14e640a016, type: 2}
+  <DropGold>k__BackingField: 10
+  <DropExp>k__BackingField: 15

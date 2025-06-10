@@ -153,8 +153,9 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            target.GetComponent<Enemy>().TakeDamage(playerStateMachine.Player.PlayerStat.BaseStat.totalAttack);
-            Debug.Log("Attack : "+playerStateMachine.Player.PlayerStat.BaseStat.totalAttack);
+            if(target.GetComponent<Enemy>().TakeDamage(playerStateMachine.Player.playerRealStat.TotalAttack)){
+                playerStateMachine.ChangeState(playerStateMachine.IdleState);
+            }
         }
     }
 }

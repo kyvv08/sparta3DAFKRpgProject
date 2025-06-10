@@ -27,16 +27,15 @@ public class Enemy : MonoBehaviour
         
         Animator = GetComponentInChildren<Animator>();
         EnemyController = GetComponent<EnemyController>();
+    }
 
+    private void Start()
+    {
         stateMachine = new EnemyStateMachine(this);
         stateMachine.ChangeState(stateMachine.IdleState);
         
         EnemyStat.Init();
         enemyRealStat.CurHP = EnemyStat.BaseStat.MaxHP;
-    }
-
-    private void Start()
-    {
     }
     
     private void Update()
@@ -44,7 +43,7 @@ public class Enemy : MonoBehaviour
         stateMachine.Update();
     }
 
-    public void TakeDamage(uint damage)
+    public bool TakeDamage(uint damage)
     {
         if (enemyRealStat.CurHP > damage)
         {
@@ -56,7 +55,16 @@ public class Enemy : MonoBehaviour
         }
         if (enemyRealStat.CurHP <= 0)
         {
+            foreach (ItemData drop in EnemyData.DropItem)
+            {
+                UIManager.Instance.inventoryUI.AddItem(drop);
+            }
+            UIManager.Instance.inventoryUI.AddGold(EnemyData.DropGold);
+            PlayerManager.Instance.player.UseExpItem(EnemyData.DropExp);
             Destroy(gameObject);
+            return true;
         }
+
+        return false;
     }
 }

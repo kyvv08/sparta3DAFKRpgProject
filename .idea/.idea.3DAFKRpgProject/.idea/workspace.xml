@@ -6,19 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="a973c584-24ae-44ab-bd89-11c48f09c059" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DAFKRpgProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DAFKRpgProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Animation/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Animation/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Enemy/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Enemy/FSM/EnemyAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Enemy/FSM/EnemyAttackState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Manager/PoolManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Manager/PoolManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Manager/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Manager/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerAttackState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerIdleState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/Enemy.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/Enemy.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/EnemySO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/EnemySO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/EnemyStat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/EnemyStat.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/Player.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/Player.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/PlayerStat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/PlayerStat.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Stat/Stat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Stat/Stat.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/UI/GameInfoUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/UI/GameInfoUIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/UI/PlayerUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/UI/PlayerUIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/UI/InventoryUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/UI/InventoryUIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/UI/ItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/UI/ItemSlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/08. Prefabs/ItemSlot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/08. Prefabs/ItemSlot.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +37,15 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bff907ed581f483ab4bd129472866e971fe00/16/4672d657/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Animation/AnimationProxy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/ky499/Desktop/스파르타 유니티 개인과제 심화/3DAFKRpgProject/Assets/01. Scripts/Enemy/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Enemy/FSM/EnemyStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Manager/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Manager/StageManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/EnemySO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/SOScript/Stage/StageData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Stat/Stat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/UI/GameInfoUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/UI/InventoryUIController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -134,7 +140,7 @@
       <workItem from="1749280642675" duration="15508000" />
       <workItem from="1749429782520" duration="25074000" />
       <workItem from="1749525049453" duration="8547000" />
-      <workItem from="1749537511861" duration="931000" />
+      <workItem from="1749537511861" duration="12979000" />
     </task>
     <servers />
   </component>
