@@ -6,28 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a973c584-24ae-44ab-bd89-11c48f09c059" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DAFKRpgProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DAFKRpgProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Animation/Enemy.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Animation/Enemy.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Enemy/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Enemy/EnemyController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Manager/StageManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Manager/StageManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/FSM/PlayerAttackState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/Enemy.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/Enemy.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/EnemySO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/EnemySO.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/EnemyStat.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Enemy/EnemyStat.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/PlayerStat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/PlayerStat.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Stage/Stage1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Stage/Stage1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Stage/Stage2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Stage/Stage2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Stage/Stage3.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Stage/Stage3.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Player/Animations/Attacks/Paladin WProp J Nordstrom@Standing Melee Attack 360 Low.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Player/Animations/Attacks/Paladin WProp J Nordstrom@Standing Melee Attack 360 Low.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/Player.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01. Scripts/SOScript/Player/Player.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +38,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/UI/GameInfoUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/UI/InventoryUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01. Scripts/Util/Util.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.9.7/Editor/Utility/ReflectionHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Graphic.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -147,7 +132,9 @@
       <workItem from="1749537511861" duration="18069000" />
       <workItem from="1749565360131" duration="3005000" />
       <workItem from="1749568737442" duration="935000" />
-      <workItem from="1749569893432" duration="2192000" />
+      <workItem from="1749569893432" duration="2241000" />
+      <workItem from="1749598020661" duration="992000" />
+      <workItem from="1749602228641" duration="1587000" />
     </task>
     <servers />
   </component>
@@ -180,19 +167,6 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/01. Scripts/Manager/StageManager.cs</url>
-          <line>95</line>
-          <properties documentPath="C:\Users\ky499\Desktop\스파르타 유니티 개인과제 심화\3DAFKRpgProject\Assets\01. Scripts\Manager\StageManager.cs" containingFunctionPresentation="메서드 'DestroyEnemy'">
-            <startOffsets>
-              <option value="2756" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2779" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

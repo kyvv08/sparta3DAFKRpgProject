@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
         Vector3 nextCorner = path.corners[curCornerIndex];
         Vector3 dir = (nextCorner - transform.position).normalized;
         
-        Controller.Move(dir * (playerStateMachine.MoveSpeedModifier * Time.deltaTime));
+        Controller.Move(dir * (playerStateMachine.Player.PlayerData.GroundData.BaseSpeed * playerStateMachine.MoveSpeedModifier * Time.deltaTime));
 
         dir.y = 0f;
         if (dir.sqrMagnitude > 0.001f)

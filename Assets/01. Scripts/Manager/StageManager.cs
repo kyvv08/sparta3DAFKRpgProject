@@ -47,6 +47,7 @@ public class StageManager : MonoBehaviour
             --index;
         }
         PlayerManager.Instance.player.transform.position = stageData[index].playerRespawnPosition;
+        PlayerManager.Instance.player.StageRestart();
         curStageNum = stageData[index].stageNum;
         SpawnEnemyInStage(index);
         UIManager.Instance.gameInfoUI.SetCurStage(curStageNum);
@@ -55,17 +56,26 @@ public class StageManager : MonoBehaviour
 
     private void SpawnEnemyInStage(int index)
     {
+        GameObject temp;
+        if (enemies.Count > 0)
+        {
+            for (int i = enemies.Count - 1; i >= 0; --i)
+            {
+                temp = enemies[i];
+                enemies.RemoveAt(i);
+                Destroy(temp);
+            }
+        }
         Vector3 randomPos;
         for(int i = 0; i < stageData[index].enemies.Count;++i) 
         {
             for (int j = 0; j < stageData[index].enemyNum[i]; ++j)
             {
                 GetRandomPoint(out randomPos);
-                GameObject temp = Instantiate(stageData[index].enemies[i].EnemyPrefab, randomPos,Quaternion.identity);
+                temp = Instantiate(stageData[index].enemies[i].EnemyPrefab, randomPos,Quaternion.identity);
                 enemies.Add(temp);
             }
         }
-        enemies.Add(Instantiate(stageData[index].enemies[0].EnemyPrefab,spawnArea[4].transform.position,Quaternion.identity));
     }
     private void GetRandomPoint(out Vector3 pos)
     {

@@ -63,6 +63,12 @@ public class Player : MonoBehaviour
         playerRealStat.BaseAttack = PlayerStat.BaseStat.BaseAttack;
         playerRealStat.AdditionalAttack = PlayerStat.BaseStat.additionalAttack;
     }
+
+    public void StageRestart()
+    {
+        playerRealStat.CurHP = PlayerStat.BaseStat.MaxHP;
+        playerRealStat.CurMP = PlayerStat.BaseStat.MaxMP;
+    }
     
     public void TakeDamage(uint damage)
     {
@@ -121,7 +127,6 @@ public class Player : MonoBehaviour
         {
             case EquipType.Weapon:
                 playerRealStat.AdditionalAttack += item.statValue;
-                Debug.Log(playerRealStat.TotalAttack);
                 break;
         }
     }
