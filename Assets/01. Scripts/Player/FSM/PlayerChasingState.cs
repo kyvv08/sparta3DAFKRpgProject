@@ -14,7 +14,7 @@ public class PlayerChasingState : IState
     
     public void Enter()
     {
-        playerStateMachine.MoveSpeedModifier = playerStateMachine.Player.PlayerData.GroundData.RunSpeedModifier;
+        playerStateMachine.MoveSpeedModifier = playerStateMachine.Player.PlayerStat.BaseStat.BaseMoveSpeed;
         StartAnimation(playerStateMachine.Player.AnimationData.RunParameterHash);
 
         playerStateMachine.Player.PlayerController.SetTarget();

@@ -261,7 +261,7 @@ public class InventoryUIController : MonoBehaviour
         {
             if (item.equipType == equipItem.equipType)
             {
-                PlayerManager.Instance.player.UnEquipItem(item);
+                PlayerManager.Instance.player.UnEquipItem(equipItem);
                 equippedItems.Remove(equipItem);
                 equippedItems.Add(item);
                 PlayerManager.Instance.player.EquipItem(item);
